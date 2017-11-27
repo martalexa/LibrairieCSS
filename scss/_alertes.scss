@@ -2,31 +2,31 @@
 /* alertes  ********************************** */
 
 .info, .danger, .succes, .avertissement {
-  width: 40%;
-  padding: 1em;
-  margin :auto;
-  text-align: center;
-  inline: block;
+    
+    inline: block;
+    width:50%;
+	padding:1em;
+	background:blue;
+	text-align:center;
+	border-radius : 5px;
+    margin :auto;
 	margin-top : 3em;
-	margin-bottom : 3em;	}
+    margin-bottom: 3em;
+}
 
 .info{
-	background-color : lighten($colorAlerteInfo, 40%);
-	color : $colorAlerteInfo;
-	border : 1px solid $colorAlerteInfo;
+	background-color : $backgroundAlerte;
+	border : 2px solid $colorAlerteInfo;
  }
  .danger{
-	background-color : lighten($colorAlerteDanger, 40%);
-	color : $colorAlerteDanger;
-	border : 1px solid $colorAlerteDanger;
+	background-color : $backgroundAlerte;
+	border : 2px solid $colorAlerteDanger;
  }
  .succes{
-	background-color : lighten($colorAlerteSucess, 40%);
-	color : $colorAlerteSucess;
-	border : 1px solid $colorAlerteSucess;
+	background-color : $backgroundAlerte;
+	border : 2px solid $colorAlerteSucess;
  }
  .avertissement{
-	background-color : lighten($colorAlerteAvert, 40%);
-	color : $colorAlerteAvert;
-	border : 1px solid $colorAlerteAvert;
+	background-color : $backgroundAlerte;
+	border : 2px solid $colorAlerteAvert;
  }

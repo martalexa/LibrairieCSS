@@ -9,11 +9,16 @@ html, body, ul, li {
   padding: 0;
   border-sizing: border-box; }
 
+body {
+  padding-right: 2%;
+  padding-left: 2%; }
+
 a {
   text-decoration: none; }
 
-p {
-  font-size: 11pt; }
+p, div {
+  font-size: 11pt;
+  text-align: justify; }
 
 /* tout pleins de balises **************************** */
 ins {
@@ -214,33 +219,31 @@ nav li {
 
 /* alertes  ********************************** */
 .info, .danger, .succes, .avertissement {
-  width: 40%;
-  padding: 1em;
-  margin: auto;
-  text-align: center;
   inline: block;
+  width: 50%;
+  padding: 1em;
+  background: blue;
+  text-align: center;
+  border-radius: 5px;
+  margin: auto;
   margin-top: 3em;
   margin-bottom: 3em; }
 
 .info {
-  background-color: #ccccff;
-  color: blue;
-  border: 1px solid blue; }
+  background-color: #EEE;
+  border: 2px solid #EE7; }
 
 .danger {
-  background-color: #ffcccc;
-  color: red;
-  border: 1px solid red; }
+  background-color: #EEE;
+  border: 2px solid red; }
 
 .succes {
-  background-color: #4dff4d;
-  color: green;
-  border: 1px solid green; }
+  background-color: #EEE;
+  border: 2px solid #1B1; }
 
 .avertissement {
-  background-color: #e6e6e6;
-  color: grey;
-  border: 1px solid grey; }
+  background-color: #EEE;
+  border: 2px solid orange; }
 
 /* Jumbotron  ****************************** */
 .jumbotron {
