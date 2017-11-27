@@ -2,7 +2,7 @@ $nbTitre : 6;
 $tailleTitre : 26pt;
 $colorSousTitre : #999;
 
-$backgroundBtn : #777;
+$backgroundBtn : #999;
 $colorBtn : white;
 $paddingHautBtn : 1em;
 $paddingCoteBtn : 1.2em;
@@ -54,28 +54,28 @@ section{
 
 //Positionnement du contenu
 
-/* Dans le cas ou le div n'est pas défini : il prend qu'une colonne */
-
-section:nth-child(2) div{
-    @include grille(8,10%,0,1);
-}
-/* =================================================== */ 
-
+// $nbCol,$Lcol,$offset,$cols
 section:nth-child(2) div:nth-child(1){
-    @include grille(8,10%,0,1);
+    @include grille(4,20%,0,1);
 }
 
 section:nth-child(2) div:nth-child(2){
-    @include grille(8,10%,1,3);
+    @include grille(4,20%,1,2);
 }
 
 section:nth-child(2) div:nth-child(3){
-    @include grille(8,10%,2,4);
+    @include grille(5,18%,1,3);
 }
 
-section:nth-child(2) div:nth-child(4){
-    @include grille(8,10%,0,8);
+section:nth-child(2) div:nth-child(3) div{
+    @include grille(5,30%,2,2);
 }
+
+
+/*
+section:nth-child(2) div:nth-child(4){
+    @include grille(4,20%,0,8);
+}*/
 
 
 

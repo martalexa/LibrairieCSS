@@ -5,6 +5,6 @@
     margin-left: ((($offset+1)*$largeurGouttiere + $offset*$Lcol)); 
     width: ($Lcol*$cols + $largeurGouttiere*($cols - 1));
     
-    border: 1px solid black;
+    //border: 1px solid black;
     box-sizing: border-box;
 }
