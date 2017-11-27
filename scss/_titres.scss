@@ -1,0 +1,19 @@
+/* titres et sous titre  ************************* */
+@for $titre from 1 to $nbTitre +1{
+	h#{$titre}{
+		font-size: $tailleTitre - ($titre * 2);
+		font-family: Tahoma, Helvetica, Arial;
+   
+	}
+}
+
+@for $titre from 1 to $nbTitre +1{
+	h#{$titre} small{
+		font-size: $tailleTitre - ($titre * 2) - 4;
+		color : $colorSousTitre;
+  
+	}
+}
+h1{
+	text-align : center;
+}

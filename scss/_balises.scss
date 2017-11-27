@@ -1,0 +1,58 @@
+/* tout pleins de balises **************************** */
+
+ins{
+	text-decoration : none;	
+}
+ins:before{
+	content: "(";
+}
+ins:after{
+	content: ")";
+}
+mark{
+	background-color :#BBB;
+	padding : 0.1em 0.2em 0.1em 0.2em;
+}
+del{
+	text-decoration: line-through;
+}
+u{
+	text-decoration:underline;
+}
+strong{
+	font-weight:900;
+}
+em{
+	font-style :italic;
+}
+blockquote, quote {
+    font-family : "Lucida Console", "Courier New", Palatino, Arial;
+	font-size: 12pt;
+    font-style: italic;
+}
+code{
+
+    font-family : "Courier New", Palatino, Arial;
+	font-style: italic;
+	font-size : 17px;
+}
+
+/* position ************************************** */
+.txtleft{
+	text-align:left;
+}
+.txtright{
+	text-align:right;
+}
+.txtcenter{
+	text-align:center;
+}
+.txtjustify{
+	text-align:justify;
+}
+.txtmaj{
+	text-transform: uppercase;
+}
+.txtminus{
+	text-transform: lowercase;
+} 

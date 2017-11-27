@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/* en : % */
+html {
+  height: 100%; }
+
+html, body, ul, li {
+  font-family: Verdana, Arial;
+  margin: 0;
+  padding: 0;
+  border-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+p {
+  font-size: 11pt; }
+
+/* tout pleins de balises **************************** */
+ins {
+  text-decoration: none; }
+
+ins:before {
+  content: "("; }
+
+ins:after {
+  content: ")"; }
+
+mark {
+  background-color: #BBB;
+  padding: 0.1em 0.2em 0.1em 0.2em; }
+
+del {
+  text-decoration: line-through; }
+
+u {
+  text-decoration: underline; }
+
+strong {
+  font-weight: 900; }
+
+em {
+  font-style: italic; }
+
+blockquote, quote {
+  font-family: "Lucida Console", "Courier New", Palatino, Arial;
+  font-size: 12pt;
+  font-style: italic; }
+
+code {
+  font-family: "Courier New", Palatino, Arial;
+  font-style: italic;
+  font-size: 17px; }
+
+/* position ************************************** */
+.txtleft {
+  text-align: left; }
+
+.txtright {
+  text-align: right; }
+
+.txtcenter {
+  text-align: center; }
+
+.txtjustify {
+  text-align: justify; }
+
+.txtmaj {
+  text-transform: uppercase; }
+
+.txtminus {
+  text-transform: lowercase; }
+
+/* titres et sous titre  ************************* */
+h1 {
+  font-size: 24pt;
+  font-family: Tahoma, Helvetica, Arial; }
+
+h2 {
+  font-size: 22pt;
+  font-family: Tahoma, Helvetica, Arial; }
+
+h3 {
+  font-size: 20pt;
+  font-family: Tahoma, Helvetica, Arial; }
+
+h4 {
+  font-size: 18pt;
+  font-family: Tahoma, Helvetica, Arial; }
+
+h5 {
+  font-size: 16pt;
+  font-family: Tahoma, Helvetica, Arial; }
+
+h6 {
+  font-size: 14pt;
+  font-family: Tahoma, Helvetica, Arial; }
+
+h1 small {
+  font-size: 20pt;
+  color: #999; }
+
+h2 small {
+  font-size: 18pt;
+  color: #999; }
+
+h3 small {
+  font-size: 16pt;
+  color: #999; }
+
+h4 small {
+  font-size: 14pt;
+  color: #999; }
+
+h5 small {
+  font-size: 12pt;
+  color: #999; }
+
+h6 small {
+  font-size: 10pt;
+  color: #999; }
+
+h1 {
+  text-align: center; }
+
+/* Menu et listes ************************************** */
+li {
+  text-decoration: none;
+  list-style-type: none;
+  transition-property: all;
+  transition-duration: 0.2s; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+nav li {
+  display: inline;
+  color: black;
+  list-style-type: none;
+  padding: 0 10px;
+  line-height: 5em;
+  font-size: 1.2em; }
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  nav li {
+    display: inline;
+    color: green;
+    line-height: 2em;
+    margin: 0;
+    padding: 0; }
+
+  nav li:nth-of-type(3):after {
+    display: block;
+    content: ""; } }
+@media (max-width: 400px) {
+  nav {
+    align-items: normal; }
+
+  nav ul {
+    width: 100px;
+    height: 40px;
+    background: url("../media/menu.png");
+    background-repeat: no-repeat; }
+
+  li {
+    display: none;
+    opacity: 0;
+    position: relative;
+    left: 40px;
+    bottom: 5px; }
+
+  ul:hover {
+    height: 130px;
+    width: 100px; }
+
+  ul:hover li {
+    display: flex;
+    justify-content: center;
+    opacity: 100;
+    line-height: 1.3em; } }
+/* Boutons  ************************************** */
+.btn {
+  text-decoration: none;
+  text-align: center;
+  transition-property: background-color,color, border-color, border, box-shadow;
+  transition-duration: 0.3s;
+  margin: 0.5em;
+  font-size: 14px;
+  padding: 1em 1.2em;
+  background-color: #777;
+  color: white;
+  border-radius: 18px;
+  font-weight: 600;
+  box-shadow: 1px 1px 2px black; }
+
+.btnSmall {
+  padding: 0.6em 0.6em; }
+
+.btnLarge {
+  padding: 1.3em 1.5em; }
+
+.btnJaune {
+  background-color: #FFEB32; }
+
+.btnVert {
+  background-color: #2CE042; }
+
+.btnRouge {
+  background-color: #FF3C32; }
+
+.btnBleu {
+  background-color: #7938D3; }
+
+/* alertes  ********************************** */
+.info, .danger, .succes, .avertissement {
+  width: 40%;
+  padding: 1em;
+  margin: auto;
+  text-align: center;
+  inline: block;
+  margin-top: 3em;
+  margin-bottom: 3em; }
+
+.info {
+  background-color: #ccccff;
+  color: blue;
+  border: 1px solid blue; }
+
+.danger {
+  background-color: #ffcccc;
+  color: red;
+  border: 1px solid red; }
+
+.succes {
+  background-color: #4dff4d;
+  color: green;
+  border: 1px solid green; }
+
+.avertissement {
+  background-color: #e6e6e6;
+  color: grey;
+  border: 1px solid grey; }
+
+/* Jumbotron  ****************************** */
+.jumbotron {
+  background-color: #EEE;
+  width: 60%;
+  margin: auto;
+  padding: 5em;
+  padding-top: 3em;
+  border-radius: 15px; }
+
+.jumbotron h1 {
+  text-align: left; }
+
+.jumbotron h2 {
+  text-align: left; }
+
+.jumbotron h3 {
+  text-align: left; }
+
+.jumbotron h4 {
+  text-align: left; }
+
+.jumbotron h5 {
+  text-align: left; }
+
+.jumbotron h6 {
+  text-align: left; }
+
+section {
+  display: flex;
+  flex-wrap: wrap; }
+
+#grille {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+#grille div {
+  background-color: grey;
+  opacity: 0.2;
+  height: 3000px;
+  margin-left: 2.2222222222%;
+  width: 10%;
+  border: 1px solid black;
+  box-sizing: border-box; }
+
+/* Dans le cas ou le div n'est pas d├®fini : il prend qu'une colonne */
+section:nth-child(2) div {
+  margin-left: 2.2222222222%;
+  width: 10%;
+  border: 1px solid black;
+  box-sizing: border-box; }
+
+/* =================================================== */
+section:nth-child(2) div:nth-child(1) {
+  margin-left: 2.2222222222%;
+  width: 10%;
+  border: 1px solid black;
+  box-sizing: border-box; }
+
+section:nth-child(2) div:nth-child(2) {
+  margin-left: 14.4444444444%;
+  width: 34.4444444444%;
+  border: 1px solid black;
+  box-sizing: border-box; }
+
+section:nth-child(2) div:nth-child(3) {
+  margin-left: 26.6666666667%;
+  width: 46.6666666667%;
+  border: 1px solid black;
+  box-sizing: border-box; }
+
+section:nth-child(2) div:nth-child(4) {
+  margin-left: 2.2222222222%;
+  width: 95.5555555556%;
+  border: 1px solid black;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=framework.css.map */

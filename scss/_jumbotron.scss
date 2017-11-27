@@ -1,0 +1,15 @@
+  /* Jumbotron  ****************************** */
+
+.jumbotron{
+	background-color: #EEE;
+	width : 60%; 
+	margin:auto;
+	padding : 5em;
+	padding-top : 3em;
+	border-radius:15px;
+}
+@for $titre from 1 to $nbTitre +1{
+	.jumbotron h#{$titre}{
+		text-align:left;
+	}
+}
